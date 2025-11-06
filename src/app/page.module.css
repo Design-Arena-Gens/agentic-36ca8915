@@ -1,0 +1,271 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 40px 24px 64px;
+  background: linear-gradient(160deg, #f7f7f7 0%, #f1f4f7 100%);
+}
+
+.main {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.header p {
+  color: #5d6670;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.monthFilter {
+  align-self: flex-start;
+  appearance: none;
+  border: 1px solid #d9dde1;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #1f2a37;
+  font-weight: 500;
+  padding: 10px 16px;
+  min-width: 160px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(11, 28, 46, 0.06);
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.05);
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 12px;
+  color: #8795a1;
+}
+
+.value {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2933;
+}
+
+.meta {
+  color: #5d6670;
+  font-size: 14px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.2fr);
+  gap: 24px;
+}
+
+.formSection,
+.expenseSection {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 28px;
+  border: 1px solid rgba(11, 28, 46, 0.05);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formSection h2,
+.expenseSection h2,
+.trendSection h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2933;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #51606e;
+}
+
+.field input,
+.field select {
+  padding: 12px 14px;
+  border: 1px solid #dce2e8;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #1f2a37;
+  background: #ffffff;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: 2px solid rgba(59, 130, 246, 0.25);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.fieldGroup {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.submit {
+  align-self: flex-start;
+  padding: 12px 20px;
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.17);
+}
+
+.expenseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expenseList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expenseItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 18px;
+  background: rgba(245, 247, 250, 0.8);
+  border-radius: 16px;
+}
+
+.expenseTitle {
+  font-weight: 600;
+  color: #1f2a37;
+}
+
+.expenseMeta {
+  font-size: 13px;
+  color: #6b7a8a;
+}
+
+.expenseAmount {
+  font-weight: 600;
+  color: #111827;
+}
+
+.emptyState {
+  padding: 20px;
+  text-align: center;
+  color: #6b7a8a;
+  background: rgba(245, 247, 250, 0.7);
+  border-radius: 16px;
+}
+
+.trendSection {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 28px;
+  border: 1px solid rgba(11, 28, 46, 0.05);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trendGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.trendItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trendMonth {
+  font-weight: 600;
+  color: #1f2933;
+}
+
+.trendBar {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(209, 213, 219, 0.5);
+  overflow: hidden;
+}
+
+.trendFill {
+  height: 100%;
+  background: linear-gradient(120deg, #2563eb, #22d3ee);
+  border-radius: 999px;
+}
+
+.trendAmount {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+@media (max-width: 960px) {
+  .contentGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 24px 18px 48px;
+  }
+
+  .fieldGroup {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
